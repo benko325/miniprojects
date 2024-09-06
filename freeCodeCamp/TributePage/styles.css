@@ -1,0 +1,53 @@
+h1, p, h3, figcaption {
+  text-align: center;
+}
+
+img {
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  padding: 5px 0;
+  background-color: rgb(202, 198, 198);
+  border: 1px solid black;
+}
+
+.image-div {
+  background-color: white;
+  padding: 10px;
+  margin: 15px;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  place-items: center;
+}
+
+.tribute-info {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  width: 80%;
+  margin: 20px auto;
+}
+
+li {
+  text-align: left;
+}
+
+div {
+  display: block;
+}
