@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this survey form with the required information</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Enter Your Name: <input id="name" name="name" type="text" placeholder="John Doe" required /></label>
+        <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="johnny@gmail.com" required /></label>
+        <label id="number-label" for="number">Enter your age (in years): <input id="number" type="number" name="number" min="15" max="120" placeholder="22"/></label>
+        <label for="dropdown">What is your gender?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+            <legend>Do you live in a big city, small town or village?</legend>
+            <label for="city"><input id="city" type="radio" name="city-town-village" value="city" class="inline" checked> City</label>
+            <label for="town"><input id="town" type="radio" name="city-town-village" value="town" class="inline"> Town</label>
+            <label for="village"><input id="village" type="radio" name="city-town-village" value="village" class="inline"> Village</label>
+      </fieldset>
+      <fieldset>
+        <legend>What kind of transport you used in the last month?</legend>
+        <input id="car" type="checkbox" name="transport" value="car" class="inline" checked> <label for="car" class="inline">Car</label>
+        <input id="bike" type="checkbox" name="transport" value="bike" class="inline"> <label for="bike" class="inline">Bike</label>
+        <input id="walk" type="checkbox" name="transport" value="walk" class="inline"> <label for="walk" class="inline">Walk</label>
+        <input id="train" type="checkbox" name="transport" value="train" class="inline"> <label for="train" class="inline">Train</label>
+        <input id="plane" type="checkbox" name="transport" value="plane" class="inline"> <label for="plane" class="inline">Plane</label>
+      </fieldset>
+      <fieldset>
+        <label for="reason">Please write where and how are you travelling the most:
+      <textarea id="reason" name="reason" rows="5" cols="40" placeholder="I am going to work by a car..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
